@@ -331,15 +331,15 @@ public class Utils {
         
         boolean hasEpsilon = false;
         
-        if ( symbols.contains( CharacterConstants.SMALL_EPSILON ) ) {
+        if ( symbols.contains( CharacterConstants.EMPTY_STRING ) ) {
             hasEpsilon = true;
-            symbols.remove( CharacterConstants.SMALL_EPSILON );
+            symbols.remove( CharacterConstants.EMPTY_STRING );
         }
         
         Collections.sort( symbols );
         
         if ( hasEpsilon ) {
-            symbols.add( 0, CharacterConstants.SMALL_EPSILON );
+            symbols.add( 0, CharacterConstants.EMPTY_STRING );
         }
         
     }

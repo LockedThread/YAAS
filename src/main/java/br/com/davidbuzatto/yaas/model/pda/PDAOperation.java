@@ -220,7 +220,7 @@ public class PDAOperation extends AbstractGeometricForm implements Cloneable, Co
             
         }
         
-        return String.format( "%c,%c/%s", symbol, top, op );
+        return String.format( "%c,%c→%s", symbol, top, op );
         
     }
     

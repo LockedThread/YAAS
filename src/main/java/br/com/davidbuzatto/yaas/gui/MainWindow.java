@@ -343,7 +343,7 @@ public class MainWindow extends javax.swing.JFrame {
         menuENFA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/enfa.png"))); // NOI18N
         menuENFA.setMnemonic('F');
         menuENFA.setText(CharacterConstants.EMPTY_STRING.toString() + "-NFA");
-        menuENFA.setToolTipText("Finite Automaton with " + CharacterConstants.SMALL_EPSILON + "-transitions");
+        menuENFA.setToolTipText("Finite Automaton with " + CharacterConstants.EMPTY_STRING + "-transitions");
 
         miENFADecimalNumber.setIcon(new javax.swing.ImageIcon(getClass().getResource("/enfa.png"))); // NOI18N
         miENFADecimalNumber.setText("L = { w | w is a valid decimal number }");

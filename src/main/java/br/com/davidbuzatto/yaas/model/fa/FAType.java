@@ -28,8 +28,8 @@ public enum FAType {
     EMPTY( "Empty", "Empty" ),
     DFA( "DFA", "Deterministic Finite Automaton" ),
     NFA( "NFA", "Nondeterministic Finite Automaton" ),
-    ENFA( CharacterConstants.SMALL_EPSILON + "-NFA", 
-            "Finite Automaton with " + CharacterConstants.SMALL_EPSILON + "-transitions" ),
+    ENFA( CharacterConstants.EMPTY_STRING + "-NFA", 
+            "Finite Automaton with " + CharacterConstants.EMPTY_STRING + "-transitions" ),
     GNFA( "GNFA", "Generalized Nondeterministic Finite Automaton" );
     
     private final String acronym;

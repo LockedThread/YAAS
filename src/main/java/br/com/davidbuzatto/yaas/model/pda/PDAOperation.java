@@ -210,7 +210,7 @@ public class PDAOperation extends AbstractGeometricForm implements Cloneable, Co
                 for ( int i = symbolsToPush.size()-1; i >= 0; i-- ) {
                     op += symbolsToPush.get( i );
                 }
-                op += top;
+                //op += top;
                 break;
             case REPLACE:
                 for ( int i = symbolsToPush.size()-1; i >= 0; i-- ) {
@@ -220,7 +220,8 @@ public class PDAOperation extends AbstractGeometricForm implements Cloneable, Co
             
         }
         
-        return String.format( "%c,%c→%s", symbol, top, op );
+        
+        return String.format( "%c,%c%c%s", symbol, top, CharacterConstants.ARROW_RIGHT, op );
         
     }
     

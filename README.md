@@ -2,6 +2,22 @@
 
 Yet Another Automata Simulator (YAAS) is a prototype tool for simulating the execution of Finite Automata, Pushdown Automata and Turing Machines. The current tool features are:
 
+# Usage
+
+## Requirements
+- Java 21+
+- Maven (if compiling)
+
+## Compiling
+```
+mvn clean install
+```
+
+## Running
+```
+java -jar YAAS-1.0.2.jar
+```
+
 ## Finite Automata (FA)
 
 - Full support for Deterministic and Nondeterministic Finite Automata modeling, test and simulation;
@@ -32,4 +48,4 @@ Yet Another Automata Simulator (YAAS) is a prototype tool for simulating the exe
 
 ## Author
 
-This tool is developed by Prof. Dr. David Buzatto.
+This tool is developed by Prof. Dr. David Buzatto. Forked by Warren Snipes for Dr. Andrew Steinberg's Discrete Structures 2 class.

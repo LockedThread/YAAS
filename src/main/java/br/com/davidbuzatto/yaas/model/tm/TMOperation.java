@@ -145,10 +145,8 @@ public class TMOperation extends AbstractGeometricForm implements Cloneable, Com
     
     @Override
     public String toString() {
-        return String.format("%c%c%c%s", readSymbol, CharacterConstants.ARROW_RIGHT, writeSymbol, 
-                type == TMMovementType.MOVE_RIGHT ? 
-                        ( DEBUG ? 'R' : CharacterConstants.ARROW_RIGHT ) : 
-                        ( DEBUG ? 'L' : CharacterConstants.ARROW_LEFT ) );
+        return String.format("%c%c%c,%s", readSymbol, CharacterConstants.ARROW_RIGHT, writeSymbol, 
+                type == TMMovementType.MOVE_RIGHT ?  'R'  :  'L'  );
     }
     
     public String generateCode( TM pda, String modelName ) {
